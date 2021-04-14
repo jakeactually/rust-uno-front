@@ -14,12 +14,12 @@ import { JoinRoom } from './JoinRoom';
 import { Game } from './Game';
 import axios from 'axios';
 
-axios.defaults.baseURL = '/api';
+axios.defaults.baseURL = '/uno/api';
 axios.defaults.withCredentials = true;
 
 function App() {
   return (
-    <Router>
+    <Router basename="/uno">
       <ToastProvider>
         <div>
           <Switch>

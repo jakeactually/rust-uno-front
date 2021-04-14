@@ -25,7 +25,7 @@ export const Room = () => {
 
     const connect = () => {
         const socket = new WebSocket(
-            `ws://localhost:8080/api/state/${params.id}`
+            `wss://jakeactually.com/uno/api/state/${params.id}`
         );
     
         socket.onmessage = async ev => {
